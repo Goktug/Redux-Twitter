@@ -21,6 +21,14 @@
 		2B24ACE4206806C500050091 /* TweetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B24ACE2206806C500050091 /* TweetDetailViewController.swift */; };
 		2B9B97212068141000062E9C /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B97202068141000062E9C /* R.generated.swift */; };
 		2B9B97222068141000062E9C /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B97202068141000062E9C /* R.generated.swift */; };
+		2B9B9728206816E300062E9C /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B9726206816E300062E9C /* TweetCell.swift */; };
+		2B9B9729206816E300062E9C /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B9726206816E300062E9C /* TweetCell.swift */; };
+		2B9B972A206816E300062E9C /* TweetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B9B9727206816E300062E9C /* TweetCell.xib */; };
+		2B9B972B206816E300062E9C /* TweetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B9B9727206816E300062E9C /* TweetCell.xib */; };
+		2B9B972E2068172900062E9C /* UIView+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B972D2068172900062E9C /* UIView+CornerRadius.swift */; };
+		2B9B972F2068172900062E9C /* UIView+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B972D2068172900062E9C /* UIView+CornerRadius.swift */; };
+		2B9B97322068237400062E9C /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B97312068237400062E9C /* Sizes.swift */; };
+		2B9B97332068237400062E9C /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B97312068237400062E9C /* Sizes.swift */; };
 		2BFFA6D320680154008112A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFFA6D220680154008112A7 /* AppDelegate.swift */; };
 		2BFFA6DC20680154008112A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BFFA6DB20680154008112A7 /* Assets.xcassets */; };
 		2BFFA6DF20680154008112A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BFFA6DD20680154008112A7 /* LaunchScreen.storyboard */; };
@@ -50,6 +58,10 @@
 		2B24ACDF206806AF00050091 /* TweetDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TweetDetail.storyboard; sourceTree = "<group>"; };
 		2B24ACE2206806C500050091 /* TweetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetailViewController.swift; sourceTree = "<group>"; };
 		2B9B97202068141000062E9C /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		2B9B9726206816E300062E9C /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
+		2B9B9727206816E300062E9C /* TweetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetCell.xib; sourceTree = "<group>"; };
+		2B9B972D2068172900062E9C /* UIView+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CornerRadius.swift"; sourceTree = "<group>"; };
+		2B9B97312068237400062E9C /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
 		2BFFA6CF20680154008112A7 /* Redux-Twitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Redux-Twitter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BFFA6D220680154008112A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BFFA6DB20680154008112A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -128,6 +140,39 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		2B9B97232068168500062E9C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2B9B9724206816AE00062E9C /* TweetCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2B9B9724206816AE00062E9C /* TweetCell */ = {
+			isa = PBXGroup;
+			children = (
+				2B9B9726206816E300062E9C /* TweetCell.swift */,
+				2B9B9727206816E300062E9C /* TweetCell.xib */,
+			);
+			path = TweetCell;
+			sourceTree = "<group>";
+		};
+		2B9B972C2068171900062E9C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2B9B972D2068172900062E9C /* UIView+CornerRadius.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2B9B97302068236B00062E9C /* Globals */ = {
+			isa = PBXGroup;
+			children = (
+				2B9B97312068237400062E9C /* Sizes.swift */,
+			);
+			path = Globals;
+			sourceTree = "<group>";
+		};
 		2BFFA6C620680154008112A7 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +196,8 @@
 		2BFFA6D120680154008112A7 /* Redux-Twitter */ = {
 			isa = PBXGroup;
 			children = (
+				2B9B97302068236B00062E9C /* Globals */,
+				2B9B972C2068171900062E9C /* Extensions */,
 				2B9B971F206813EF00062E9C /* Resources */,
 				2BFFA6F420680162008112A7 /* Scenes */,
 				2BFFA6D220680154008112A7 /* AppDelegate.swift */,
@@ -192,6 +239,7 @@
 		2BFFA6F620680170008112A7 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				2B9B97232068168500062E9C /* Views */,
 				2B24ACD9206805AE00050091 /* Search.storyboard */,
 				2B24ACDC206805E200050091 /* SearchViewController.swift */,
 			);
@@ -288,6 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B9B972A206816E300062E9C /* TweetCell.xib in Resources */,
 				2BFFA6DF20680154008112A7 /* LaunchScreen.storyboard in Resources */,
 				2BFFA6DC20680154008112A7 /* Assets.xcassets in Resources */,
 				2B24ACDA206805AE00050091 /* Search.storyboard in Resources */,
@@ -300,6 +349,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B9B972B206816E300062E9C /* TweetCell.xib in Resources */,
 				2B24ACDB206805AE00050091 /* Search.storyboard in Resources */,
 				2B24ACD4206804D000050091 /* Splash.storyboard in Resources */,
 				2B24ACE1206806AF00050091 /* TweetDetail.storyboard in Resources */,
@@ -466,6 +516,9 @@
 				2B24ACE3206806C500050091 /* TweetDetailViewController.swift in Sources */,
 				2B9B97212068141000062E9C /* R.generated.swift in Sources */,
 				2BFFA6D320680154008112A7 /* AppDelegate.swift in Sources */,
+				2B9B97322068237400062E9C /* Sizes.swift in Sources */,
+				2B9B9728206816E300062E9C /* TweetCell.swift in Sources */,
+				2B9B972E2068172900062E9C /* UIView+CornerRadius.swift in Sources */,
 				2B24ACD6206804EF00050091 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,6 +531,9 @@
 				2B24ACE4206806C500050091 /* TweetDetailViewController.swift in Sources */,
 				2B9B97222068141000062E9C /* R.generated.swift in Sources */,
 				2BFFA6EA20680155008112A7 /* Redux_TwitterTests.swift in Sources */,
+				2B9B97332068237400062E9C /* Sizes.swift in Sources */,
+				2B9B9729206816E300062E9C /* TweetCell.swift in Sources */,
+				2B9B972F2068172900062E9C /* UIView+CornerRadius.swift in Sources */,
 				2B24ACD7206804EF00050091 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
