@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B24ACD3206804D000050091 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B24ACD2206804D000050091 /* Splash.storyboard */; };
+		2B24ACD4206804D000050091 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B24ACD2206804D000050091 /* Splash.storyboard */; };
+		2B24ACD6206804EF00050091 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B24ACD5206804EF00050091 /* SplashViewController.swift */; };
+		2B24ACD7206804EF00050091 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B24ACD5206804EF00050091 /* SplashViewController.swift */; };
+		2B24ACDA206805AE00050091 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B24ACD9206805AE00050091 /* Search.storyboard */; };
+		2B24ACDB206805AE00050091 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B24ACD9206805AE00050091 /* Search.storyboard */; };
+		2B24ACDD206805E200050091 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B24ACDC206805E200050091 /* SearchViewController.swift */; };
+		2B24ACDE206805E200050091 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B24ACDC206805E200050091 /* SearchViewController.swift */; };
+		2B24ACE0206806AF00050091 /* TweetDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B24ACDF206806AF00050091 /* TweetDetail.storyboard */; };
+		2B24ACE1206806AF00050091 /* TweetDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B24ACDF206806AF00050091 /* TweetDetail.storyboard */; };
+		2B24ACE3206806C500050091 /* TweetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B24ACE2206806C500050091 /* TweetDetailViewController.swift */; };
+		2B24ACE4206806C500050091 /* TweetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B24ACE2206806C500050091 /* TweetDetailViewController.swift */; };
+		2BCAC5682068096C00BC280B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCAC5672068096C00BC280B /* R.generated.swift */; };
+		2BCAC5692068096C00BC280B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCAC5672068096C00BC280B /* R.generated.swift */; };
+		2BFFA6D320680154008112A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFFA6D220680154008112A7 /* AppDelegate.swift */; };
+		2BFFA6DC20680154008112A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BFFA6DB20680154008112A7 /* Assets.xcassets */; };
+		2BFFA6DF20680154008112A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BFFA6DD20680154008112A7 /* LaunchScreen.storyboard */; };
+		2BFFA6EA20680155008112A7 /* Redux_TwitterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFFA6E920680155008112A7 /* Redux_TwitterTests.swift */; };
+		3E6DC188FF5AB065B58768E4 /* Pods_Redux_Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000DE063CA980A2C468C6F32 /* Pods_Redux_Twitter.framework */; };
+		DC71E459F7BA07FA4B80D751 /* Pods_Redux_TwitterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECD103F104B54254AEC7CE5 /* Pods_Redux_TwitterTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2BFFA6E620680155008112A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BFFA6C720680154008112A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BFFA6CE20680154008112A7;
+			remoteInfo = "Redux-Twitter";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000D5FDD4111E1CD8DAA3F2C /* Pods-Redux-Twitter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redux-Twitter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Redux-Twitter/Pods-Redux-Twitter.debug.xcconfig"; sourceTree = "<group>"; };
+		000DE063CA980A2C468C6F32 /* Pods_Redux_Twitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Redux_Twitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C3920D4C4680CC75A688675 /* Pods-Redux-TwitterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redux-TwitterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Redux-TwitterTests/Pods-Redux-TwitterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B24ACD2206804D000050091 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		2B24ACD5206804EF00050091 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		2B24ACD9206805AE00050091 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		2B24ACDC206805E200050091 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		2B24ACDF206806AF00050091 /* TweetDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TweetDetail.storyboard; sourceTree = "<group>"; };
+		2B24ACE2206806C500050091 /* TweetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetailViewController.swift; sourceTree = "<group>"; };
+		2BCAC5672068096C00BC280B /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		2BFFA6CF20680154008112A7 /* Redux-Twitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Redux-Twitter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BFFA6D220680154008112A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2BFFA6DB20680154008112A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2BFFA6DE20680154008112A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2BFFA6E020680155008112A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BFFA6E520680155008112A7 /* Redux-TwitterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Redux-TwitterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BFFA6E920680155008112A7 /* Redux_TwitterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redux_TwitterTests.swift; sourceTree = "<group>"; };
+		2BFFA6EB20680155008112A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86EBC72F1FFA67D763A25AB6 /* Pods-Redux-TwitterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redux-TwitterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Redux-TwitterTests/Pods-Redux-TwitterTests.release.xcconfig"; sourceTree = "<group>"; };
+		CD30319FA7109CF688CFCB0D /* Pods-Redux-Twitter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redux-Twitter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Redux-Twitter/Pods-Redux-Twitter.release.xcconfig"; sourceTree = "<group>"; };
+		CECD103F104B54254AEC7CE5 /* Pods_Redux_TwitterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Redux_TwitterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BFFA6CC20680154008112A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E6DC188FF5AB065B58768E4 /* Pods_Redux_Twitter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BFFA6E220680155008112A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC71E459F7BA07FA4B80D751 /* Pods_Redux_TwitterTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		033BAAD78AD953389F72E475 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				000DE063CA980A2C468C6F32 /* Pods_Redux_Twitter.framework */,
+				CECD103F104B54254AEC7CE5 /* Pods_Redux_TwitterTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		25A5E49A067592098B8D16A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				000D5FDD4111E1CD8DAA3F2C /* Pods-Redux-Twitter.debug.xcconfig */,
+				CD30319FA7109CF688CFCB0D /* Pods-Redux-Twitter.release.xcconfig */,
+				0C3920D4C4680CC75A688675 /* Pods-Redux-TwitterTests.debug.xcconfig */,
+				86EBC72F1FFA67D763A25AB6 /* Pods-Redux-TwitterTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2B24ACD12068048F00050091 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2BFFA6DD20680154008112A7 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		2B24ACD82068058C00050091 /* TweetDetail */ = {
+			isa = PBXGroup;
+			children = (
+				2B24ACDF206806AF00050091 /* TweetDetail.storyboard */,
+				2B24ACE2206806C500050091 /* TweetDetailViewController.swift */,
+			);
+			path = TweetDetail;
+			sourceTree = "<group>";
+		};
+		2B24ACE6206807D300050091 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2BCAC5672068096C00BC280B /* R.generated.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2BFFA6C620680154008112A7 = {
+			isa = PBXGroup;
+			children = (
+				2BFFA6D120680154008112A7 /* Redux-Twitter */,
+				2BFFA6E820680155008112A7 /* Redux-TwitterTests */,
+				2BFFA6D020680154008112A7 /* Products */,
+				25A5E49A067592098B8D16A3 /* Pods */,
+				033BAAD78AD953389F72E475 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2BFFA6D020680154008112A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BFFA6CF20680154008112A7 /* Redux-Twitter.app */,
+				2BFFA6E520680155008112A7 /* Redux-TwitterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BFFA6D120680154008112A7 /* Redux-Twitter */ = {
+			isa = PBXGroup;
+			children = (
+				2B24ACE6206807D300050091 /* Resources */,
+				2BFFA6F420680162008112A7 /* Scenes */,
+				2BFFA6D220680154008112A7 /* AppDelegate.swift */,
+				2BFFA6DB20680154008112A7 /* Assets.xcassets */,
+				2BFFA6E020680155008112A7 /* Info.plist */,
+			);
+			path = "Redux-Twitter";
+			sourceTree = "<group>";
+		};
+		2BFFA6E820680155008112A7 /* Redux-TwitterTests */ = {
+			isa = PBXGroup;
+			children = (
+				2BFFA6E920680155008112A7 /* Redux_TwitterTests.swift */,
+				2BFFA6EB20680155008112A7 /* Info.plist */,
+			);
+			path = "Redux-TwitterTests";
+			sourceTree = "<group>";
+		};
+		2BFFA6F420680162008112A7 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2B24ACD82068058C00050091 /* TweetDetail */,
+				2B24ACD12068048F00050091 /* LaunchScreen */,
+				2BFFA6F620680170008112A7 /* Search */,
+				2BFFA6F52068016B008112A7 /* Splash */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2BFFA6F52068016B008112A7 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				2B24ACD2206804D000050091 /* Splash.storyboard */,
+				2B24ACD5206804EF00050091 /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		2BFFA6F620680170008112A7 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				2B24ACD9206805AE00050091 /* Search.storyboard */,
+				2B24ACDC206805E200050091 /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BFFA6CE20680154008112A7 /* Redux-Twitter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BFFA6EE20680155008112A7 /* Build configuration list for PBXNativeTarget "Redux-Twitter" */;
+			buildPhases = (
+				A12F478DB366068A0275A289 /* [CP] Check Pods Manifest.lock */,
+				2B24ACE52068076D00050091 /* R.swift Script */,
+				2BFFA6CB20680154008112A7 /* Sources */,
+				2BFFA6CC20680154008112A7 /* Frameworks */,
+				2BFFA6CD20680154008112A7 /* Resources */,
+				D2736D7AAC049628217F7799 /* [CP] Embed Pods Frameworks */,
+				743B89F0FB5143CA34201D2B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Redux-Twitter";
+			productName = "Redux-Twitter";
+			productReference = 2BFFA6CF20680154008112A7 /* Redux-Twitter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2BFFA6E420680155008112A7 /* Redux-TwitterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BFFA6F120680155008112A7 /* Build configuration list for PBXNativeTarget "Redux-TwitterTests" */;
+			buildPhases = (
+				54CBAA9170843677FD6C33C0 /* [CP] Check Pods Manifest.lock */,
+				2BFFA6E120680155008112A7 /* Sources */,
+				2BFFA6E220680155008112A7 /* Frameworks */,
+				2BFFA6E320680155008112A7 /* Resources */,
+				E591C528108674928D57821D /* [CP] Embed Pods Frameworks */,
+				75D68E16D9F7F59CB61BC4CD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BFFA6E720680155008112A7 /* PBXTargetDependency */,
+			);
+			name = "Redux-TwitterTests";
+			productName = "Redux-TwitterTests";
+			productReference = 2BFFA6E520680155008112A7 /* Redux-TwitterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BFFA6C720680154008112A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Goktug Gumus";
+				TargetAttributes = {
+					2BFFA6CE20680154008112A7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					2BFFA6E420680155008112A7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2BFFA6CE20680154008112A7;
+					};
+				};
+			};
+			buildConfigurationList = 2BFFA6CA20680154008112A7 /* Build configuration list for PBXProject "Redux-Twitter" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2BFFA6C620680154008112A7;
+			productRefGroup = 2BFFA6D020680154008112A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BFFA6CE20680154008112A7 /* Redux-Twitter */,
+				2BFFA6E420680155008112A7 /* Redux-TwitterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BFFA6CD20680154008112A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BFFA6DF20680154008112A7 /* LaunchScreen.storyboard in Resources */,
+				2BFFA6DC20680154008112A7 /* Assets.xcassets in Resources */,
+				2B24ACDA206805AE00050091 /* Search.storyboard in Resources */,
+				2B24ACE0206806AF00050091 /* TweetDetail.storyboard in Resources */,
+				2B24ACD3206804D000050091 /* Splash.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BFFA6E320680155008112A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B24ACDB206805AE00050091 /* Search.storyboard in Resources */,
+				2B24ACD4206804D000050091 /* Splash.storyboard in Resources */,
+				2B24ACE1206806AF00050091 /* TweetDetail.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B24ACE52068076D00050091 /* R.swift Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "R.swift Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
+		};
+		54CBAA9170843677FD6C33C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Redux-TwitterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		743B89F0FB5143CA34201D2B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Redux-Twitter/Pods-Redux-Twitter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75D68E16D9F7F59CB61BC4CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Redux-TwitterTests/Pods-Redux-TwitterTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A12F478DB366068A0275A289 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Redux-Twitter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2736D7AAC049628217F7799 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Redux-Twitter/Pods-Redux-Twitter-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Redux-Twitter/Pods-Redux-Twitter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E591C528108674928D57821D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Redux-TwitterTests/Pods-Redux-TwitterTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Redux-TwitterTests/Pods-Redux-TwitterTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BFFA6CB20680154008112A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B24ACDD206805E200050091 /* SearchViewController.swift in Sources */,
+				2B24ACE3206806C500050091 /* TweetDetailViewController.swift in Sources */,
+				2BCAC5682068096C00BC280B /* R.generated.swift in Sources */,
+				2BFFA6D320680154008112A7 /* AppDelegate.swift in Sources */,
+				2B24ACD6206804EF00050091 /* SplashViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BFFA6E120680155008112A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B24ACDE206805E200050091 /* SearchViewController.swift in Sources */,
+				2B24ACE4206806C500050091 /* TweetDetailViewController.swift in Sources */,
+				2BCAC5692068096C00BC280B /* R.generated.swift in Sources */,
+				2BFFA6EA20680155008112A7 /* Redux_TwitterTests.swift in Sources */,
+				2B24ACD7206804EF00050091 /* SplashViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2BFFA6E720680155008112A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BFFA6CE20680154008112A7 /* Redux-Twitter */;
+			targetProxy = 2BFFA6E620680155008112A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2BFFA6DD20680154008112A7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BFFA6DE20680154008112A7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2BFFA6EC20680155008112A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		2BFFA6ED20680155008112A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BFFA6EF20680155008112A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000D5FDD4111E1CD8DAA3F2C /* Pods-Redux-Twitter.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9C3CMHG8ER;
+				INFOPLIST_FILE = "Redux-Twitter/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goktuggumus.Redux-Twitter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2BFFA6F020680155008112A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD30319FA7109CF688CFCB0D /* Pods-Redux-Twitter.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9C3CMHG8ER;
+				INFOPLIST_FILE = "Redux-Twitter/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goktuggumus.Redux-Twitter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2BFFA6F220680155008112A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C3920D4C4680CC75A688675 /* Pods-Redux-TwitterTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9C3CMHG8ER;
+				INFOPLIST_FILE = "Redux-TwitterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goktuggumus.Redux-TwitterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Redux-Twitter.app/Redux-Twitter";
+			};
+			name = Debug;
+		};
+		2BFFA6F320680155008112A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86EBC72F1FFA67D763A25AB6 /* Pods-Redux-TwitterTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9C3CMHG8ER;
+				INFOPLIST_FILE = "Redux-TwitterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goktuggumus.Redux-TwitterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Redux-Twitter.app/Redux-Twitter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BFFA6CA20680154008112A7 /* Build configuration list for PBXProject "Redux-Twitter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BFFA6EC20680155008112A7 /* Debug */,
+				2BFFA6ED20680155008112A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BFFA6EE20680155008112A7 /* Build configuration list for PBXNativeTarget "Redux-Twitter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BFFA6EF20680155008112A7 /* Debug */,
+				2BFFA6F020680155008112A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BFFA6F120680155008112A7 /* Build configuration list for PBXNativeTarget "Redux-TwitterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BFFA6F220680155008112A7 /* Debug */,
+				2BFFA6F320680155008112A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BFFA6C720680154008112A7 /* Project object */;
+}
