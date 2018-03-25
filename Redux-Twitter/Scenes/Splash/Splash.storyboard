@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -31,10 +32,21 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sNZ-hu-E5X"/>
                     </view>
+                    <connections>
+                        <segue destination="Ep3-SN-flT" kind="show" identifier="showSearch" animates="NO" id="1da-m8-HVC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5As-SD-nte" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="223" y="131"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="8a1-Pz-AoY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" id="Ep3-SN-flT" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="om7-7f-M9f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="895" y="130"/>
         </scene>
     </scenes>
 </document>
