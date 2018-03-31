@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import ReSwift
+import ReSwiftRouter
 
-class TweetDetailViewController: UIViewController {
+class TweetDetailViewController: UIViewController, Routable {
 
     override func viewDidLoad() {
         super.viewDidLoad()

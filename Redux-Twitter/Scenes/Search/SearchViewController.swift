@@ -7,14 +7,39 @@
 //
 
 import UIKit
+import ReSwift
+import ReSwiftRouter
+import RxSwift
 
-class SearchViewController: UIViewController {
+//
+import Result
+import Moya
+
+class SearchViewController: UIViewController, StoreSubscriber, Routable {
+  typealias StoreSubscriberStateType = SearchState
+  
   @IBOutlet weak var searchBar: UISearchBar!
   @IBOutlet weak var tweetsCollectionView: UICollectionView!
   
   override func viewDidLoad() {
     super.viewDidLoad()
     configureCollectionView()
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    
+    store.subscribe(self) {
+      $0.select {
+        $0.searchState
+      }
+    }
+  }
+  
+  override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+    
+    store.unsubscribe(self)
   }
   
   private func configureCollectionView() {
@@ -30,6 +55,20 @@ class SearchViewController: UIViewController {
     }
     tweetsCollectionView.delegate = self
     tweetsCollectionView.dataSource = self
+  }
+  
+  func newState(state: SearchState) {
+    
+    if let results = state.results {
+      switch results {
+      case let .success(tweets):
+        print(tweets.toJSON())
+        break
+      case let .failure(TwitterAPIError.somethingWentWrong(error)):
+        print("Error: \(error)")
+        break
+      }
+    }
   }
 }
 
