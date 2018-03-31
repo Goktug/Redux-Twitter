@@ -1,13 +1,18 @@
 platform :ios, '9.0'
 
 def shared_pods
+  # Social
+  pod 'TwitterKit'
+  
   # Networking
-  pod 'Moya', '~> 11.0'
+  pod 'Moya/RxSwift', '~> 11.0'
 
   # Data
   pod 'Kingfisher'
   pod 'ObjectMapper'
-  pod 'Moya-ObjectMapper', git: 'https://github.com/dimacheverda/Moya-ObjectMapper.git'
+  
+  # Crypto
+  pod 'CryptoSwift'
 
   # Utility
   pod 'R.swift'
@@ -15,6 +20,14 @@ def shared_pods
   # UI Helper
   pod 'SnapKit'
   pod 'IQKeyboardManagerSwift'
+  
+  # Redux
+  pod 'ReSwift'
+  pod 'ReSwiftRouter'
+  
+  # Reactive
+  pod 'RxSwift', '~> 4.0'
+  pod 'RxCocoa', '~> 4.0'
 end
 
 target 'Redux-Twitter' do
