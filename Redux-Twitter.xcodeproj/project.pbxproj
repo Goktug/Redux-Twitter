@@ -29,6 +29,53 @@
 		2B9B972F2068172900062E9C /* UIView+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B972D2068172900062E9C /* UIView+CornerRadius.swift */; };
 		2B9B97322068237400062E9C /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B97312068237400062E9C /* Sizes.swift */; };
 		2B9B97332068237400062E9C /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B97312068237400062E9C /* Sizes.swift */; };
+		2B9B973920682CC200062E9C /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B973820682CC200062E9C /* Tweet.swift */; };
+		2B9B973A20682CC200062E9C /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B973820682CC200062E9C /* Tweet.swift */; };
+		2B9B973D2068453B00062E9C /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B973C2068453B00062E9C /* AuthState.swift */; };
+		2B9B973E2068453B00062E9C /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B973C2068453B00062E9C /* AuthState.swift */; };
+		2B9B97402068458A00062E9C /* AuthReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B973F2068458A00062E9C /* AuthReducer.swift */; };
+		2B9B97412068458A00062E9C /* AuthReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B973F2068458A00062E9C /* AuthReducer.swift */; };
+		2B9B9746206845E800062E9C /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B9745206845E800062E9C /* AppState.swift */; };
+		2B9B9747206845E800062E9C /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B9745206845E800062E9C /* AppState.swift */; };
+		2B9B9749206846CC00062E9C /* AuthAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B9748206846CC00062E9C /* AuthAction.swift */; };
+		2B9B974C206C0A4300062E9C /* LoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B974B206C0A4300062E9C /* LoginProvider.swift */; };
+		2B9B974D206C0A4300062E9C /* LoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B974B206C0A4300062E9C /* LoginProvider.swift */; };
+		2B9B974F206C0D1400062E9C /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9B974E206C0D1400062E9C /* SafariServices.framework */; };
+		2B9B9751206C0E0600062E9C /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B9750206C0E0600062E9C /* Config.swift */; };
+		2B9B9752206C0E0600062E9C /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B9750206C0E0600062E9C /* Config.swift */; };
+		2B9B9754206C134400062E9C /* Redux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B9753206C134400062E9C /* Redux.swift */; };
+		2B9B9755206C134400062E9C /* Redux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B9753206C134400062E9C /* Redux.swift */; };
+		2B9B9757206C14A100062E9C /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B9756206C14A100062E9C /* AppReducer.swift */; };
+		2B9B9758206C14A100062E9C /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B9756206C14A100062E9C /* AppReducer.swift */; };
+		2B9B9759206D74D400062E9C /* AuthAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B9748206846CC00062E9C /* AuthAction.swift */; };
+		2B9B975C206D862F00062E9C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B975B206D862F00062E9C /* Router.swift */; };
+		2B9B975D206D862F00062E9C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B975B206D862F00062E9C /* Router.swift */; };
+		2B9B975F206D872200062E9C /* RootRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B975E206D872200062E9C /* RootRoutable.swift */; };
+		2B9B9760206D872200062E9C /* RootRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B975E206D872200062E9C /* RootRoutable.swift */; };
+		2B9B9762206D87AA00062E9C /* SplashViewRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B9761206D87AA00062E9C /* SplashViewRoutable.swift */; };
+		2B9B9763206D87AA00062E9C /* SplashViewRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B9761206D87AA00062E9C /* SplashViewRoutable.swift */; };
+		2B9B9765206D884A00062E9C /* SearchViewRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B9764206D884A00062E9C /* SearchViewRoutable.swift */; };
+		2B9B9766206D884A00062E9C /* SearchViewRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B9764206D884A00062E9C /* SearchViewRoutable.swift */; };
+		2B9B9768206D88D600062E9C /* TweetDetailViewRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B9767206D88D600062E9C /* TweetDetailViewRoutable.swift */; };
+		2B9B9769206D88D600062E9C /* TweetDetailViewRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B9767206D88D600062E9C /* TweetDetailViewRoutable.swift */; };
+		2B9B976B206D8FA900062E9C /* SearchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B976A206D8FA900062E9C /* SearchState.swift */; };
+		2B9B976C206D8FA900062E9C /* SearchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B976A206D8FA900062E9C /* SearchState.swift */; };
+		2B9B976E206D8FD200062E9C /* SearchAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B976D206D8FD200062E9C /* SearchAction.swift */; };
+		2B9B976F206D8FD200062E9C /* SearchAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B976D206D8FD200062E9C /* SearchAction.swift */; };
+		2B9B9771206D91BC00062E9C /* SearchReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B9770206D91BC00062E9C /* SearchReducer.swift */; };
+		2B9B9772206D91BC00062E9C /* SearchReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B9770206D91BC00062E9C /* SearchReducer.swift */; };
+		2B9B9774206D92E600062E9C /* SearchProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B9773206D92E600062E9C /* SearchProvider.swift */; };
+		2B9B9775206D92E600062E9C /* SearchProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B9773206D92E600062E9C /* SearchProvider.swift */; };
+		2B9B9777206F7CF400062E9C /* TwitterCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B9776206F7CF400062E9C /* TwitterCredentials.swift */; };
+		2B9B9778206F7CF400062E9C /* TwitterCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B9776206F7CF400062E9C /* TwitterCredentials.swift */; };
+		2B9B977A206F81A700062E9C /* String+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B9779206F81A700062E9C /* String+Random.swift */; };
+		2B9B977B206F81A700062E9C /* String+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B9779206F81A700062E9C /* String+Random.swift */; };
+		2B9B977D206F81F900062E9C /* OAuthTwitterHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B977C206F81F900062E9C /* OAuthTwitterHeader.swift */; };
+		2B9B977E206F81F900062E9C /* OAuthTwitterHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B977C206F81F900062E9C /* OAuthTwitterHeader.swift */; };
+		2B9B9780206F84A800062E9C /* String+PercentEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B977F206F84A800062E9C /* String+PercentEncoding.swift */; };
+		2B9B9781206F84A800062E9C /* String+PercentEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B977F206F84A800062E9C /* String+PercentEncoding.swift */; };
+		2BDA6D22206FBA81001D07BC /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDA6D21206FBA81001D07BC /* Errors.swift */; };
+		2BDA6D23206FBA81001D07BC /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDA6D21206FBA81001D07BC /* Errors.swift */; };
 		2BFFA6D320680154008112A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFFA6D220680154008112A7 /* AppDelegate.swift */; };
 		2BFFA6DC20680154008112A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BFFA6DB20680154008112A7 /* Assets.xcassets */; };
 		2BFFA6DF20680154008112A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BFFA6DD20680154008112A7 /* LaunchScreen.storyboard */; };
@@ -62,6 +109,30 @@
 		2B9B9727206816E300062E9C /* TweetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetCell.xib; sourceTree = "<group>"; };
 		2B9B972D2068172900062E9C /* UIView+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CornerRadius.swift"; sourceTree = "<group>"; };
 		2B9B97312068237400062E9C /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
+		2B9B973820682CC200062E9C /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		2B9B973C2068453B00062E9C /* AuthState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthState.swift; sourceTree = "<group>"; };
+		2B9B973F2068458A00062E9C /* AuthReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthReducer.swift; sourceTree = "<group>"; };
+		2B9B9745206845E800062E9C /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		2B9B9748206846CC00062E9C /* AuthAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAction.swift; sourceTree = "<group>"; };
+		2B9B974B206C0A4300062E9C /* LoginProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProvider.swift; sourceTree = "<group>"; };
+		2B9B974E206C0D1400062E9C /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		2B9B9750206C0E0600062E9C /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		2B9B9753206C134400062E9C /* Redux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redux.swift; sourceTree = "<group>"; };
+		2B9B9756206C14A100062E9C /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		2B9B975B206D862F00062E9C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		2B9B975E206D872200062E9C /* RootRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRoutable.swift; sourceTree = "<group>"; };
+		2B9B9761206D87AA00062E9C /* SplashViewRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewRoutable.swift; sourceTree = "<group>"; };
+		2B9B9764206D884A00062E9C /* SearchViewRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewRoutable.swift; sourceTree = "<group>"; };
+		2B9B9767206D88D600062E9C /* TweetDetailViewRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetailViewRoutable.swift; sourceTree = "<group>"; };
+		2B9B976A206D8FA900062E9C /* SearchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchState.swift; sourceTree = "<group>"; };
+		2B9B976D206D8FD200062E9C /* SearchAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAction.swift; sourceTree = "<group>"; };
+		2B9B9770206D91BC00062E9C /* SearchReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchReducer.swift; sourceTree = "<group>"; };
+		2B9B9773206D92E600062E9C /* SearchProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProvider.swift; sourceTree = "<group>"; };
+		2B9B9776206F7CF400062E9C /* TwitterCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCredentials.swift; sourceTree = "<group>"; };
+		2B9B9779206F81A700062E9C /* String+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Random.swift"; sourceTree = "<group>"; };
+		2B9B977C206F81F900062E9C /* OAuthTwitterHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthTwitterHeader.swift; sourceTree = "<group>"; };
+		2B9B977F206F84A800062E9C /* String+PercentEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+PercentEncoding.swift"; sourceTree = "<group>"; };
+		2BDA6D21206FBA81001D07BC /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		2BFFA6CF20680154008112A7 /* Redux-Twitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Redux-Twitter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BFFA6D220680154008112A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BFFA6DB20680154008112A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,6 +151,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B9B974F206C0D1400062E9C /* SafariServices.framework in Frameworks */,
 				3E6DC188FF5AB065B58768E4 /* Pods_Redux_Twitter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,6 +170,7 @@
 		033BAAD78AD953389F72E475 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2B9B974E206C0D1400062E9C /* SafariServices.framework */,
 				000DE063CA980A2C468C6F32 /* Pods_Redux_Twitter.framework */,
 				CECD103F104B54254AEC7CE5 /* Pods_Redux_TwitterTests.framework */,
 			);
@@ -161,6 +234,8 @@
 			isa = PBXGroup;
 			children = (
 				2B9B972D2068172900062E9C /* UIView+CornerRadius.swift */,
+				2B9B9779206F81A700062E9C /* String+Random.swift */,
+				2B9B977F206F84A800062E9C /* String+PercentEncoding.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -169,8 +244,81 @@
 			isa = PBXGroup;
 			children = (
 				2B9B97312068237400062E9C /* Sizes.swift */,
+				2B9B9750206C0E0600062E9C /* Config.swift */,
+				2B9B9776206F7CF400062E9C /* TwitterCredentials.swift */,
+				2BDA6D21206FBA81001D07BC /* Errors.swift */,
 			);
 			path = Globals;
+			sourceTree = "<group>";
+		};
+		2B9B973420682C4900062E9C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2B9B973820682CC200062E9C /* Tweet.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2B9B973520682CA400062E9C /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				2B9B9748206846CC00062E9C /* AuthAction.swift */,
+				2B9B976D206D8FD200062E9C /* SearchAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		2B9B973620682CA900062E9C /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				2B9B973F2068458A00062E9C /* AuthReducer.swift */,
+				2B9B9756206C14A100062E9C /* AppReducer.swift */,
+				2B9B9770206D91BC00062E9C /* SearchReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		2B9B973720682CAE00062E9C /* States */ = {
+			isa = PBXGroup;
+			children = (
+				2B9B973C2068453B00062E9C /* AuthState.swift */,
+				2B9B9745206845E800062E9C /* AppState.swift */,
+				2B9B976A206D8FA900062E9C /* SearchState.swift */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
+		2B9B973B2068350500062E9C /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				2B9B973720682CAE00062E9C /* States */,
+				2B9B973620682CA900062E9C /* Reducers */,
+				2B9B973520682CA400062E9C /* Actions */,
+				2B9B9753206C134400062E9C /* Redux.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		2B9B974A206C0A3300062E9C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2B9B974B206C0A4300062E9C /* LoginProvider.swift */,
+				2B9B9773206D92E600062E9C /* SearchProvider.swift */,
+				2B9B977C206F81F900062E9C /* OAuthTwitterHeader.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2B9B975A206D85C700062E9C /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				2B9B975B206D862F00062E9C /* Router.swift */,
+				2B9B975E206D872200062E9C /* RootRoutable.swift */,
+				2B9B9761206D87AA00062E9C /* SplashViewRoutable.swift */,
+				2B9B9764206D884A00062E9C /* SearchViewRoutable.swift */,
+				2B9B9767206D88D600062E9C /* TweetDetailViewRoutable.swift */,
+			);
+			path = Routes;
 			sourceTree = "<group>";
 		};
 		2BFFA6C620680154008112A7 = {
@@ -196,6 +344,10 @@
 		2BFFA6D120680154008112A7 /* Redux-Twitter */ = {
 			isa = PBXGroup;
 			children = (
+				2B9B974A206C0A3300062E9C /* Services */,
+				2B9B975A206D85C700062E9C /* Routes */,
+				2B9B973B2068350500062E9C /* Redux */,
+				2B9B973420682C4900062E9C /* Models */,
 				2B9B97302068236B00062E9C /* Globals */,
 				2B9B972C2068171900062E9C /* Extensions */,
 				2B9B971F206813EF00062E9C /* Resources */,
@@ -397,9 +549,13 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Redux-Twitter/Pods-Redux-Twitter-resources.sh",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -447,26 +603,38 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Redux-Twitter/Pods-Redux-Twitter-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ReSwiftRouter/ReSwiftRouter.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwiftRouter.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -514,12 +682,35 @@
 			files = (
 				2B24ACDD206805E200050091 /* SearchViewController.swift in Sources */,
 				2B24ACE3206806C500050091 /* TweetDetailViewController.swift in Sources */,
+				2B9B9757206C14A100062E9C /* AppReducer.swift in Sources */,
+				2B9B9751206C0E0600062E9C /* Config.swift in Sources */,
+				2B9B975C206D862F00062E9C /* Router.swift in Sources */,
+				2B9B9780206F84A800062E9C /* String+PercentEncoding.swift in Sources */,
+				2B9B9768206D88D600062E9C /* TweetDetailViewRoutable.swift in Sources */,
 				2B9B97212068141000062E9C /* R.generated.swift in Sources */,
+				2B9B9746206845E800062E9C /* AppState.swift in Sources */,
+				2B9B973920682CC200062E9C /* Tweet.swift in Sources */,
+				2B9B977A206F81A700062E9C /* String+Random.swift in Sources */,
+				2B9B97402068458A00062E9C /* AuthReducer.swift in Sources */,
+				2B9B9749206846CC00062E9C /* AuthAction.swift in Sources */,
+				2BDA6D22206FBA81001D07BC /* Errors.swift in Sources */,
 				2BFFA6D320680154008112A7 /* AppDelegate.swift in Sources */,
+				2B9B975F206D872200062E9C /* RootRoutable.swift in Sources */,
 				2B9B97322068237400062E9C /* Sizes.swift in Sources */,
+				2B9B9765206D884A00062E9C /* SearchViewRoutable.swift in Sources */,
 				2B9B9728206816E300062E9C /* TweetCell.swift in Sources */,
+				2B9B9774206D92E600062E9C /* SearchProvider.swift in Sources */,
+				2B9B973D2068453B00062E9C /* AuthState.swift in Sources */,
+				2B9B9777206F7CF400062E9C /* TwitterCredentials.swift in Sources */,
+				2B9B976E206D8FD200062E9C /* SearchAction.swift in Sources */,
 				2B9B972E2068172900062E9C /* UIView+CornerRadius.swift in Sources */,
+				2B9B9762206D87AA00062E9C /* SplashViewRoutable.swift in Sources */,
+				2B9B976B206D8FA900062E9C /* SearchState.swift in Sources */,
+				2B9B977D206F81F900062E9C /* OAuthTwitterHeader.swift in Sources */,
+				2B9B9771206D91BC00062E9C /* SearchReducer.swift in Sources */,
 				2B24ACD6206804EF00050091 /* SplashViewController.swift in Sources */,
+				2B9B9754206C134400062E9C /* Redux.swift in Sources */,
+				2B9B974C206C0A4300062E9C /* LoginProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,11 +719,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B24ACDE206805E200050091 /* SearchViewController.swift in Sources */,
+				2B9B974D206C0A4300062E9C /* LoginProvider.swift in Sources */,
+				2B9B9755206C134400062E9C /* Redux.swift in Sources */,
+				2B9B9759206D74D400062E9C /* AuthAction.swift in Sources */,
+				2B9B975D206D862F00062E9C /* Router.swift in Sources */,
+				2B9B9781206F84A800062E9C /* String+PercentEncoding.swift in Sources */,
+				2B9B9769206D88D600062E9C /* TweetDetailViewRoutable.swift in Sources */,
 				2B24ACE4206806C500050091 /* TweetDetailViewController.swift in Sources */,
+				2B9B9752206C0E0600062E9C /* Config.swift in Sources */,
 				2B9B97222068141000062E9C /* R.generated.swift in Sources */,
+				2B9B977B206F81A700062E9C /* String+Random.swift in Sources */,
+				2B9B9758206C14A100062E9C /* AppReducer.swift in Sources */,
+				2B9B9747206845E800062E9C /* AppState.swift in Sources */,
+				2BDA6D23206FBA81001D07BC /* Errors.swift in Sources */,
+				2B9B973A20682CC200062E9C /* Tweet.swift in Sources */,
+				2B9B9760206D872200062E9C /* RootRoutable.swift in Sources */,
+				2B9B97412068458A00062E9C /* AuthReducer.swift in Sources */,
+				2B9B9766206D884A00062E9C /* SearchViewRoutable.swift in Sources */,
 				2BFFA6EA20680155008112A7 /* Redux_TwitterTests.swift in Sources */,
+				2B9B9775206D92E600062E9C /* SearchProvider.swift in Sources */,
 				2B9B97332068237400062E9C /* Sizes.swift in Sources */,
+				2B9B9778206F7CF400062E9C /* TwitterCredentials.swift in Sources */,
+				2B9B976F206D8FD200062E9C /* SearchAction.swift in Sources */,
 				2B9B9729206816E300062E9C /* TweetCell.swift in Sources */,
+				2B9B9763206D87AA00062E9C /* SplashViewRoutable.swift in Sources */,
+				2B9B976C206D8FA900062E9C /* SearchState.swift in Sources */,
+				2B9B977E206F81F900062E9C /* OAuthTwitterHeader.swift in Sources */,
+				2B9B9772206D91BC00062E9C /* SearchReducer.swift in Sources */,
+				2B9B973E2068453B00062E9C /* AuthState.swift in Sources */,
 				2B9B972F2068172900062E9C /* UIView+CornerRadius.swift in Sources */,
 				2B24ACD7206804EF00050091 /* SplashViewController.swift in Sources */,
 			);
