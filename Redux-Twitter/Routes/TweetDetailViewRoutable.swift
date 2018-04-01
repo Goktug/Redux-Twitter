@@ -8,4 +8,11 @@
 
 import ReSwiftRouter
 
-class TweetDetailViewRoutable: Routable {}
+class TweetDetailViewRoutable: Routable {
+  public func popRouteSegment(
+    _ routeElementIdentifier: RouteElementIdentifier,
+    animated: Bool,
+    completionHandler: @escaping RoutingCompletionHandler) {
+    
+  }
+}

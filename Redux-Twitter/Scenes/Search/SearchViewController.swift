@@ -13,9 +13,13 @@ import RxCocoa
 import RxSwift
 import Result
 import PullToRefreshKit
+import ReRxSwift
 
-class SearchViewController: UIViewController, StoreSubscriber, Routable {
-  typealias StoreSubscriberStateType = SearchState
+class SearchViewController: UIViewController, Routable {
+  
+  let connection = Connection(store: store,
+                              mapStateToProps: mapStateToProps,
+                              mapDispatchToActions: mapDispatchToActions)
   
   let disposeBag = DisposeBag()
   
@@ -23,40 +27,89 @@ class SearchViewController: UIViewController, StoreSubscriber, Routable {
   @IBOutlet weak var tweetsCollectionView: UICollectionView!
   
   private var results: [Tweet] = []
+  private var didChangeQuery: PublishSubject = PublishSubject<Void>()
+  private var didChangeMaxId: PublishSubject = PublishSubject<Void>()
   
   override func viewDidLoad() {
     super.viewDidLoad()
     configureCollectionView()
     configurePullToRefresh()
     
+    // When query or maxId changes, it is gonna reload data only once
+    // this mechanism prevents reloading twice
+    Observable.combineLatest(didChangeQuery, didChangeMaxId)
+      .subscribe(onNext: { [weak self] _ in
+        self?.updateData()
+      })
+      .disposed(by: disposeBag)
+    
+    connection.subscribe(\Props.query) { [weak self] query in
+      self?.didChangeQuery.onNext(())
+    }
+    
+    connection.subscribe(\Props.maxId) { [weak self] maxId in
+      // do nil check for preventing in order to reloading twice
+      if maxId != nil {
+        self?.didChangeMaxId.onNext(())
+      }
+    }
+    
     searchBar.rx.text
       .orEmpty // Make it non-optional
+      .skip(1)
       .debounce(0.5, scheduler: MainScheduler.instance) // Wait 0.5 for changes.
       .distinctUntilChanged()
-      .subscribe(onNext: { text in
+      .subscribe(onNext: { [weak self] text in
         if text != "" {
-          store.dispatch(SearchState.searchTweets(query: text))
+          self?.actions.searchTweets(text)
         } else {
-          store.dispatch(ResetSearchAction())
+          self?.actions.resetSearch()
         }
       })
       .disposed(by: disposeBag)
   }
   
+  private func updateData() {
+    if let results = store.state.searchState.results {
+      switch results {
+      case let .success(tweets):
+        self.results = tweets
+        break
+      case let .failure(TwitterAPIError.somethingWentWrong(error)):
+        print("Error: \(error)")
+        self.results.removeAll()
+        break
+      }
+      
+      self.tweetsCollectionView.reloadData()
+    } else {
+      // Reset
+      self.results.removeAll()
+      self.tweetsCollectionView.reloadData()
+    }
+    
+    self.tweetsCollectionView.switchRefreshFooter(to: .normal)
+  }
+  
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     
-    store.subscribe(self) {
-      $0.select {
-        $0.searchState
-      }
+    connection.connect()
+  }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    
+    if store.state.navigationState.route != [RouteNames.search] {
+      actions.setRoute([RouteNames.search])
+      updateData()
     }
   }
   
   override func viewWillDisappear(_ animated: Bool) {
     super.viewWillDisappear(animated)
     
-    store.unsubscribe(self)
+    connection.disconnect()
   }
   
   private func configureCollectionView() {
@@ -86,32 +139,15 @@ class SearchViewController: UIViewController, StoreSubscriber, Routable {
     tweetsCollectionView.switchRefreshFooter(to: .refreshing)
     store.dispatch(SearchState.loadMoreTweets())
   }
-  
-  func newState(state: SearchState) {
-    if let results = state.results {
-      switch results {
-      case let .success(tweets):
-        self.results = tweets
-        break
-      case let .failure(TwitterAPIError.somethingWentWrong(error)):
-        print("Error: \(error)")
-        self.results.removeAll()
-        break
-      }
-      
-      tweetsCollectionView.reloadData()
-    } else {
-      // Reset
-      self.results.removeAll()
-      tweetsCollectionView.reloadData()
-    }
-    
-    tweetsCollectionView.switchRefreshFooter(to: .normal)
-  }
 }
 
 extension SearchViewController: UICollectionViewDelegate {
-  
+  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    let tweet = results[indexPath.item]
+    
+    actions.setTweetDetail(tweet)
+    actions.setRoute([RouteNames.search, RouteNames.tweetDetail])
+  }
 }
 
 extension SearchViewController: UICollectionViewDataSource {
@@ -129,4 +165,35 @@ extension SearchViewController: UICollectionViewDataSource {
     
     return UICollectionViewCell()
   }
+}
+
+extension SearchViewController: Connectable {
+  struct Props {
+    let query: String?
+    let maxId: String?
+  }
+  struct Actions {
+    let searchTweets: (_ query: String) -> ()
+    let loadMoreTweets: () -> ()
+    let resetSearch: () -> ()
+    let setTweetDetail: (_ tweet: Tweet) -> ()
+    let setRoute: (Route) -> ()
+  }
+}
+
+private let mapStateToProps = { (appState: AppState) in
+  return SearchViewController.Props(
+    query: appState.searchState.query,
+    maxId: appState.searchState.maxId
+  )
+}
+
+private let mapDispatchToActions = { (dispatch: @escaping DispatchFunction) in
+  return SearchViewController.Actions(
+    searchTweets: { newQuery in dispatch(SearchState.searchTweets(query: newQuery)) },
+    loadMoreTweets: { dispatch(SearchState.loadMoreTweets()) },
+    resetSearch: { dispatch(ResetSearchAction()) },
+    setTweetDetail: { tweet in dispatch(SetTweetDetailAction(tweet: tweet)) },
+    setRoute: { route in dispatch(ReSwiftRouter.SetRouteAction(route)) }
+  )
 }

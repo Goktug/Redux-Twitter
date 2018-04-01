@@ -7,8 +7,9 @@
 //
 
 import TwitterKit
+import ReSwift
 
-struct AuthState {
+struct AuthState: StateType {
   var session: TWTRAuthSession?
   var error: NSError?
   var loggedInState: LoggedInState = .idle
