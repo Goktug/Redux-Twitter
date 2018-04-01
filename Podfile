@@ -25,6 +25,7 @@ def shared_pods
   # Redux
   pod 'ReSwift'
   pod 'ReSwiftRouter'
+  pod 'ReRxSwift', '~> 1.0'
   
   # Reactive
   pod 'RxSwift', '~> 4.0'
