@@ -20,6 +20,31 @@ class TweetCell: UICollectionViewCell {
   
   @IBOutlet weak var containerViewWidthConstraint: NSLayoutConstraint!
   
+  var model: Tweet? {
+    didSet {
+      if let model = model {
+        if let imageUrl = URL(string: model.thumbnailUrl) {
+          thumbnailView.kf.setImage(with: imageUrl)
+        }
+        
+        if let tweetImageUrl = model.tweetImageUrl, let imageUrl = URL(string: tweetImageUrl) {
+          tweetImageView.kf.setImage(with: imageUrl)
+        }
+        
+        nameLabel.text = model.username
+        messageLabel.text = model.text
+        dateLabel.text = model.readableCreatedAt
+      }
+    }
+  }
+  
+  override func prepareForReuse() {
+    super.prepareForReuse()
+    
+    thumbnailView.image = nil
+    tweetImageView.image = nil
+  }
+  
   override func awakeFromNib() {
     super.awakeFromNib()
     
