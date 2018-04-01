@@ -10,7 +10,7 @@ import Foundation
 import Result
 import ReSwift
 
-struct SearchState: StateType {
+struct SearchState: StateType, Encodable {
   var query: String?
   var results: Result<[Tweet], TwitterAPIError>?
   var maxId: String?
