@@ -20,6 +20,7 @@ def shared_pods
   # UI Helper
   pod 'SnapKit'
   pod 'IQKeyboardManagerSwift'
+  pod 'PullToRefreshKit'
   
   # Redux
   pod 'ReSwift'

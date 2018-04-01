@@ -10,6 +10,7 @@ PODS:
     - Moya/Core
     - RxSwift (~> 4.0)
   - ObjectMapper (3.1.0)
+  - PullToRefreshKit (0.8.2)
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
@@ -31,6 +32,7 @@ DEPENDENCIES:
   - Kingfisher
   - Moya/RxSwift (~> 11.0)
   - ObjectMapper
+  - PullToRefreshKit
   - R.swift
   - ReSwift
   - ReSwiftRouter
@@ -46,6 +48,7 @@ SPEC CHECKSUMS:
   Kingfisher: 98e6d5b5e807645743e8ed5ececd25d688d38452
   Moya: 3d594ada51a21cc02b18739ab578a1984f900c8a
   ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+  PullToRefreshKit: 0a2a019bf094b8beba18c8a1bedfb1fb67ee70fd
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
@@ -57,6 +60,6 @@ SPEC CHECKSUMS:
   TwitterCore: 644d59e75abccb26cf0a9050d2c4dea0e5412241
   TwitterKit: a2e60ddcedbf54091eac6f27685ca7a87681e1d7
 
-PODFILE CHECKSUM: 01d5d3c21bede8d830a85edacc8c9387c35cb15d
+PODFILE CHECKSUM: 59bd837f99e89921a8072862a5ae25cb197c723a
 
 COCOAPODS: 1.3.1
