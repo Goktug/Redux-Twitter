@@ -10,6 +10,7 @@ import UIKit
 import TwitterKit
 import ReSwift
 import ReSwiftRouter
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -32,7 +33,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Twitter Config
     TWTRTwitter.sharedInstance().start(withConsumerKey: twitterConsumerKey, consumerSecret: twitterConsumerSecret)
     
-    //LoginProvider.logOut()
+    // Setup Keyboard Manager
+    IQKeyboardManager.sharedManager().enable = true
     
     // Start with splash screen (a.k.a Login screen)
     store.dispatch(ReSwiftRouter.SetRouteAction([RouteNames.splash]))
