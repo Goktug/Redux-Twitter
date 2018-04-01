@@ -22,7 +22,6 @@ let twitterConsumerSecret: String = ""
 
     ```
     $ pod install
-    $ carthage bootstrap --no-use-binaries --platform ios
     ```
 
 6. Open `Redux-Twitter.xcworkspace` in Xcode.
