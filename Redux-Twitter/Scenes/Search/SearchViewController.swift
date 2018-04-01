@@ -165,6 +165,12 @@ extension SearchViewController: UICollectionViewDataSource {
     
     return UICollectionViewCell()
   }
+  
+  func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    if searchBar.canResignFirstResponder {
+      searchBar.resignFirstResponder()
+    }
+  }
 }
 
 extension SearchViewController: Connectable {
