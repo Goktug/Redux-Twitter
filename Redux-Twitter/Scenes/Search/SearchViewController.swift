@@ -9,21 +9,38 @@
 import UIKit
 import ReSwift
 import ReSwiftRouter
+import RxCocoa
 import RxSwift
-
-//
 import Result
-import Moya
+import PullToRefreshKit
 
 class SearchViewController: UIViewController, StoreSubscriber, Routable {
   typealias StoreSubscriberStateType = SearchState
   
+  let disposeBag = DisposeBag()
+  
   @IBOutlet weak var searchBar: UISearchBar!
   @IBOutlet weak var tweetsCollectionView: UICollectionView!
+  
+  private var results: [Tweet] = []
   
   override func viewDidLoad() {
     super.viewDidLoad()
     configureCollectionView()
+    configurePullToRefresh()
+    
+    searchBar.rx.text
+      .orEmpty // Make it non-optional
+      .debounce(0.5, scheduler: MainScheduler.instance) // Wait 0.5 for changes.
+      .distinctUntilChanged()
+      .subscribe(onNext: { text in
+        if text != "" {
+          store.dispatch(SearchState.searchTweets(query: text))
+        } else {
+          store.dispatch(ResetSearchAction())
+        }
+      })
+      .disposed(by: disposeBag)
   }
   
   override func viewWillAppear(_ animated: Bool) {
@@ -57,18 +74,39 @@ class SearchViewController: UIViewController, StoreSubscriber, Routable {
     tweetsCollectionView.dataSource = self
   }
   
-  func newState(state: SearchState) {
+  private func configurePullToRefresh() {
+    let footer = DefaultRefreshFooter.footer()
     
+    tweetsCollectionView.configRefreshFooter(with: footer, action: { [weak self] in
+      self?.loadMore()
+    })
+  }
+  
+  private func loadMore() {
+    tweetsCollectionView.switchRefreshFooter(to: .refreshing)
+    store.dispatch(SearchState.loadMoreTweets())
+  }
+  
+  func newState(state: SearchState) {
     if let results = state.results {
       switch results {
       case let .success(tweets):
-        print(tweets.toJSON())
+        self.results = tweets
         break
       case let .failure(TwitterAPIError.somethingWentWrong(error)):
         print("Error: \(error)")
+        self.results.removeAll()
         break
       }
+      
+      tweetsCollectionView.reloadData()
+    } else {
+      // Reset
+      self.results.removeAll()
+      tweetsCollectionView.reloadData()
     }
+    
+    tweetsCollectionView.switchRefreshFooter(to: .normal)
   }
 }
 
@@ -78,11 +116,14 @@ extension SearchViewController: UICollectionViewDelegate {
 
 extension SearchViewController: UICollectionViewDataSource {
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return 2
+    return results.count
   }
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     if let tweetCell = collectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.tweetCell.identifier, for: indexPath) as? TweetCell {
+      
+      tweetCell.model = results[indexPath.row]
+      
       return tweetCell
     }
     

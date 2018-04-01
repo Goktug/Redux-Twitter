@@ -7,17 +7,32 @@
 //
 
 import ReSwift
+import Result
 
 func searchReducer(action: Action, state: SearchState?) -> SearchState {
   var state = state ?? SearchState()
   
   switch action {
-  case let action as SetSearchResultsAction:
+  case let action as SearchTweetsAction:
     state.results = action.results
-  case let action as SetSearchQueryAction:
-    state.query = action.query
-  case let action as SetSearchMaxIdAction:
     state.maxId = action.maxId
+    state.query = action.query
+  case let action as LoadMoreTweetsAction:
+    state.maxId = action.maxId
+    
+    switch action.results {
+    case let .success(tweets):
+      if var currentTweets = state.results!.value {
+        currentTweets.append(contentsOf: tweets)
+        
+        state.results = .success(currentTweets)
+      }
+      break
+    case .failure(_):
+      state.results = action.results
+      break
+    }
+    break
   case _ as ResetSearchAction:
     state.query = nil
     state.results = nil
