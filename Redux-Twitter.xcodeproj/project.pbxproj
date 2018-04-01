@@ -76,6 +76,12 @@
 		2B9B9781206F84A800062E9C /* String+PercentEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B977F206F84A800062E9C /* String+PercentEncoding.swift */; };
 		2BDA6D22206FBA81001D07BC /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDA6D21206FBA81001D07BC /* Errors.swift */; };
 		2BDA6D23206FBA81001D07BC /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDA6D21206FBA81001D07BC /* Errors.swift */; };
+		2BDA6D25207112EA001D07BC /* TweetDetailState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDA6D24207112EA001D07BC /* TweetDetailState.swift */; };
+		2BDA6D26207112EC001D07BC /* TweetDetailState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDA6D24207112EA001D07BC /* TweetDetailState.swift */; };
+		2BDA6D2820711324001D07BC /* TweetDetailAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDA6D2720711324001D07BC /* TweetDetailAction.swift */; };
+		2BDA6D2920711324001D07BC /* TweetDetailAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDA6D2720711324001D07BC /* TweetDetailAction.swift */; };
+		2BDA6D2B2071136F001D07BC /* TweetDetailReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDA6D2A2071136F001D07BC /* TweetDetailReducer.swift */; };
+		2BDA6D2C2071136F001D07BC /* TweetDetailReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDA6D2A2071136F001D07BC /* TweetDetailReducer.swift */; };
 		2BFFA6D320680154008112A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFFA6D220680154008112A7 /* AppDelegate.swift */; };
 		2BFFA6DC20680154008112A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BFFA6DB20680154008112A7 /* Assets.xcassets */; };
 		2BFFA6DF20680154008112A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BFFA6DD20680154008112A7 /* LaunchScreen.storyboard */; };
@@ -133,6 +139,9 @@
 		2B9B977C206F81F900062E9C /* OAuthTwitterHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthTwitterHeader.swift; sourceTree = "<group>"; };
 		2B9B977F206F84A800062E9C /* String+PercentEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+PercentEncoding.swift"; sourceTree = "<group>"; };
 		2BDA6D21206FBA81001D07BC /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		2BDA6D24207112EA001D07BC /* TweetDetailState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetailState.swift; sourceTree = "<group>"; };
+		2BDA6D2720711324001D07BC /* TweetDetailAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetailAction.swift; sourceTree = "<group>"; };
+		2BDA6D2A2071136F001D07BC /* TweetDetailReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetailReducer.swift; sourceTree = "<group>"; };
 		2BFFA6CF20680154008112A7 /* Redux-Twitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Redux-Twitter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BFFA6D220680154008112A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BFFA6DB20680154008112A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -264,6 +273,7 @@
 			children = (
 				2B9B9748206846CC00062E9C /* AuthAction.swift */,
 				2B9B976D206D8FD200062E9C /* SearchAction.swift */,
+				2BDA6D2720711324001D07BC /* TweetDetailAction.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -274,6 +284,7 @@
 				2B9B973F2068458A00062E9C /* AuthReducer.swift */,
 				2B9B9756206C14A100062E9C /* AppReducer.swift */,
 				2B9B9770206D91BC00062E9C /* SearchReducer.swift */,
+				2BDA6D2A2071136F001D07BC /* TweetDetailReducer.swift */,
 			);
 			path = Reducers;
 			sourceTree = "<group>";
@@ -284,6 +295,7 @@
 				2B9B973C2068453B00062E9C /* AuthState.swift */,
 				2B9B9745206845E800062E9C /* AppState.swift */,
 				2B9B976A206D8FA900062E9C /* SearchState.swift */,
+				2BDA6D24207112EA001D07BC /* TweetDetailState.swift */,
 			);
 			path = States;
 			sourceTree = "<group>";
@@ -610,6 +622,7 @@
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/PullToRefreshKit/PullToRefreshKit.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/ReRxSwift/ReRxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ReSwiftRouter/ReSwiftRouter.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
@@ -629,6 +642,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PullToRefreshKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReRxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwiftRouter.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
@@ -688,6 +702,7 @@
 				2B9B9751206C0E0600062E9C /* Config.swift in Sources */,
 				2B9B975C206D862F00062E9C /* Router.swift in Sources */,
 				2B9B9780206F84A800062E9C /* String+PercentEncoding.swift in Sources */,
+				2BDA6D2820711324001D07BC /* TweetDetailAction.swift in Sources */,
 				2B9B9768206D88D600062E9C /* TweetDetailViewRoutable.swift in Sources */,
 				2B9B97212068141000062E9C /* R.generated.swift in Sources */,
 				2B9B9746206845E800062E9C /* AppState.swift in Sources */,
@@ -696,6 +711,7 @@
 				2B9B97402068458A00062E9C /* AuthReducer.swift in Sources */,
 				2B9B9749206846CC00062E9C /* AuthAction.swift in Sources */,
 				2BDA6D22206FBA81001D07BC /* Errors.swift in Sources */,
+				2BDA6D25207112EA001D07BC /* TweetDetailState.swift in Sources */,
 				2BFFA6D320680154008112A7 /* AppDelegate.swift in Sources */,
 				2B9B975F206D872200062E9C /* RootRoutable.swift in Sources */,
 				2B9B97322068237400062E9C /* Sizes.swift in Sources */,
@@ -707,6 +723,7 @@
 				2B9B976E206D8FD200062E9C /* SearchAction.swift in Sources */,
 				2B9B972E2068172900062E9C /* UIView+CornerRadius.swift in Sources */,
 				2B9B9762206D87AA00062E9C /* SplashViewRoutable.swift in Sources */,
+				2BDA6D2B2071136F001D07BC /* TweetDetailReducer.swift in Sources */,
 				2B9B976B206D8FA900062E9C /* SearchState.swift in Sources */,
 				2B9B977D206F81F900062E9C /* OAuthTwitterHeader.swift in Sources */,
 				2B9B9771206D91BC00062E9C /* SearchReducer.swift in Sources */,
@@ -726,6 +743,7 @@
 				2B9B9759206D74D400062E9C /* AuthAction.swift in Sources */,
 				2B9B975D206D862F00062E9C /* Router.swift in Sources */,
 				2B9B9781206F84A800062E9C /* String+PercentEncoding.swift in Sources */,
+				2BDA6D2920711324001D07BC /* TweetDetailAction.swift in Sources */,
 				2B9B9769206D88D600062E9C /* TweetDetailViewRoutable.swift in Sources */,
 				2B24ACE4206806C500050091 /* TweetDetailViewController.swift in Sources */,
 				2B9B9752206C0E0600062E9C /* Config.swift in Sources */,
@@ -734,6 +752,7 @@
 				2B9B9758206C14A100062E9C /* AppReducer.swift in Sources */,
 				2B9B9747206845E800062E9C /* AppState.swift in Sources */,
 				2BDA6D23206FBA81001D07BC /* Errors.swift in Sources */,
+				2BDA6D26207112EC001D07BC /* TweetDetailState.swift in Sources */,
 				2B9B973A20682CC200062E9C /* Tweet.swift in Sources */,
 				2B9B9760206D872200062E9C /* RootRoutable.swift in Sources */,
 				2B9B97412068458A00062E9C /* AuthReducer.swift in Sources */,
@@ -745,6 +764,7 @@
 				2B9B976F206D8FD200062E9C /* SearchAction.swift in Sources */,
 				2B9B9729206816E300062E9C /* TweetCell.swift in Sources */,
 				2B9B9763206D87AA00062E9C /* SplashViewRoutable.swift in Sources */,
+				2BDA6D2C2071136F001D07BC /* TweetDetailReducer.swift in Sources */,
 				2B9B976C206D8FA900062E9C /* SearchState.swift in Sources */,
 				2B9B977E206F81F900062E9C /* OAuthTwitterHeader.swift in Sources */,
 				2B9B9772206D91BC00062E9C /* SearchReducer.swift in Sources */,

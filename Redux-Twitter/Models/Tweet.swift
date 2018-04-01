@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class Tweet: Mappable {
+class Tweet: Mappable, Codable {
   var id: String!
   var username: String!
   var thumbnailUrl: String!

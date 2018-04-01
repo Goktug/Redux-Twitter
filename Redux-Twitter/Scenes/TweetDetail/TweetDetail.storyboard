@@ -4,10 +4,16 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Tweet Detail-->
         <scene sceneID="Sg1-fs-59O">
@@ -17,24 +23,100 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tweet Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tcn-mS-I4w">
-                                <rect key="frame" x="140" y="323" width="95" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1jN-2r-k5Q" userLabel="ContainerView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_thumbnail" translatesAutoresizingMaskIntoConstraints="NO" id="KHm-Ww-LQB" userLabel="ThumbnailView">
+                                        <rect key="frame" x="15" y="15" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.94509803920000002" green="0.94901960780000005" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="0p8-Qu-R27"/>
+                                            <constraint firstAttribute="width" constant="50" id="MwY-xR-nu4"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OxN-Df-Muc">
+                                        <rect key="frame" x="75" y="15" width="35" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="Hv8-ju-Coh"/>
+                                            <constraint firstAttribute="height" constant="20" id="UJy-LG-TWj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                        <color key="textColor" white="0.27639431419999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBh-l6-Tit" userLabel="Message">
+                                        <rect key="frame" x="75" y="40" width="285" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="F0X-Ev-Mwx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzB-lR-Nrn">
+                                        <rect key="frame" x="118" y="15" width="28" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Bao-5v-wR0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                        <color key="textColor" red="0.63529411759999999" green="0.63529411759999999" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="300" translatesAutoresizingMaskIntoConstraints="NO" id="WLw-rG-1sk" userLabel="TweetImageView">
+                                        <rect key="frame" x="15" y="90" width="345" height="300"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="300" id="IKl-70-caH"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="UBh-l6-Tit" firstAttribute="top" secondItem="OxN-Df-Muc" secondAttribute="bottom" constant="5" id="1Lo-xD-ybc"/>
+                                    <constraint firstItem="WLw-rG-1sk" firstAttribute="leading" secondItem="KHm-Ww-LQB" secondAttribute="leading" id="7zj-Da-Zf4"/>
+                                    <constraint firstItem="OxN-Df-Muc" firstAttribute="leading" secondItem="KHm-Ww-LQB" secondAttribute="trailing" constant="10" id="9XR-X0-lWP"/>
+                                    <constraint firstItem="hzB-lR-Nrn" firstAttribute="leading" secondItem="OxN-Df-Muc" secondAttribute="trailing" constant="8" id="Anp-n5-c9h"/>
+                                    <constraint firstItem="KHm-Ww-LQB" firstAttribute="leading" secondItem="1jN-2r-k5Q" secondAttribute="leading" constant="15" id="Hqa-rt-Zbg"/>
+                                    <constraint firstAttribute="trailing" secondItem="UBh-l6-Tit" secondAttribute="trailing" constant="15" id="KJ6-7N-uWe"/>
+                                    <constraint firstItem="OxN-Df-Muc" firstAttribute="top" secondItem="1jN-2r-k5Q" secondAttribute="top" constant="15" id="VqO-CA-dWA"/>
+                                    <constraint firstItem="WLw-rG-1sk" firstAttribute="top" secondItem="UBh-l6-Tit" secondAttribute="bottom" constant="25" id="WMz-1v-eoh"/>
+                                    <constraint firstAttribute="width" constant="375" id="ZnI-wR-zdB"/>
+                                    <constraint firstItem="KHm-Ww-LQB" firstAttribute="top" secondItem="1jN-2r-k5Q" secondAttribute="top" constant="15" id="i4v-gS-2FW"/>
+                                    <constraint firstAttribute="trailing" secondItem="WLw-rG-1sk" secondAttribute="trailing" constant="15" id="pqM-Ig-qcP"/>
+                                    <constraint firstItem="hzB-lR-Nrn" firstAttribute="top" secondItem="1jN-2r-k5Q" secondAttribute="top" constant="15" id="psI-3G-d47"/>
+                                    <constraint firstItem="UBh-l6-Tit" firstAttribute="leading" secondItem="KHm-Ww-LQB" secondAttribute="trailing" constant="10" id="zhB-29-AMh"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Tcn-mS-I4w" firstAttribute="centerX" secondItem="dFT-vL-1HC" secondAttribute="centerX" id="HiW-Xq-Vii"/>
-                            <constraint firstItem="Tcn-mS-I4w" firstAttribute="centerY" secondItem="dFT-vL-1HC" secondAttribute="centerY" id="eTR-ed-cTK"/>
+                            <constraint firstItem="1jN-2r-k5Q" firstAttribute="trailing" secondItem="sPY-N2-aZ7" secondAttribute="trailing" id="Kud-ah-zGo"/>
+                            <constraint firstItem="sPY-N2-aZ7" firstAttribute="bottom" secondItem="1jN-2r-k5Q" secondAttribute="bottom" id="atg-69-LzL"/>
+                            <constraint firstItem="1jN-2r-k5Q" firstAttribute="leading" secondItem="sPY-N2-aZ7" secondAttribute="leading" id="bJ7-2R-emw"/>
+                            <constraint firstItem="1jN-2r-k5Q" firstAttribute="top" secondItem="sPY-N2-aZ7" secondAttribute="top" id="dVP-YA-Jba"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sPY-N2-aZ7"/>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="hzB-lR-Nrn" id="NeH-vK-jcs"/>
+                        <outlet property="messageLabel" destination="UBh-l6-Tit" id="Fx9-n5-3vN"/>
+                        <outlet property="nameLabel" destination="OxN-Df-Muc" id="ozr-CH-vao"/>
+                        <outlet property="thumbnailView" destination="KHm-Ww-LQB" id="t9c-6t-AVe"/>
+                        <outlet property="tweetImageView" destination="WLw-rG-1sk" id="ncB-Cy-0ST"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Drm-aR-dnq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="238" y="180"/>
+            <point key="canvasLocation" x="300" y="178.56071964017991"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="default_thumbnail" width="48" height="48"/>
+    </resources>
 </document>
