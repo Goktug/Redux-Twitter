@@ -1,8 +1,6 @@
 # Redux-Twitter
 Basic Twitter Implementation with ReSwift and RxSwift
 
-<img src="https://cdn.pbrd.co/images/HeF4FnN.png" width="317">
-
 # Build
 
 To build:
